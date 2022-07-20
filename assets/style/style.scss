@@ -11,20 +11,98 @@ body {
   padding: 0 10px;
 }
 
+.grid {
+  display: grid;
+}
+
+.grid__col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .d-flex {
   display: flex;
 }
 
-.justify-between {
-  justify-content: space-between;
+.justify {
+  &-between {
+    justify-content: space-between;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-start {
+    justify-content: flex-start;
+  }
+  &-end {
+    justify-content: end;
+  }
 }
 
-.align-center {
-  align-items: center;
+.align {
+  &-center {
+    align-items: center;
+  }
+  &-start {
+    align-items: flex-start;
+  }
+  &-end {
+    align-items: end;
+  }
 }
 
+.flex {
+  &-column {
+    flex-direction: column;
+  }
 
+  &-row {
+    flex-direction: row;
+  }
+}
+
+.section {
+  &__subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #F46752;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    color: #1D253C;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: #5A6482;
+  }
+
+}
+.price-btn {
+  width: 220px;
+  height: 61px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #F46752;
+  border: 1px solid rgba(29, 37, 60, 0.2);
+  border-radius: 4px;
+}
+
+.section {
+  &__title {
+    margin-top: 26px;
+  }
+  &__desc {
+    margin: 19px 0 32px;
+  }
+}
 .header {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 
@@ -90,64 +168,125 @@ body {
   }
 }
 
+
 .hero {
-  position: relative;
-  &__container {
-    max-width: 1334px;
-
+  height: calc(100vh  - 105px);
+  background: url("../images/hero.png") no-repeat right;
+  background-position-y: 17px;
+  background-size: 880px;
+  & .container {
+    height: 100%;
+    max-width: 1220px;
   }
-  &__meet {
-    position: absolute;
-    top: 223px;
-    z-index: 10;
 
-  }
-  &__intro {
-    font-weight: 600;
+  &__subtitle {
     font-size: 18px;
     line-height: 27px;
-    text-transform: uppercase;
-    color: #F46752;
   }
-
   &__title {
-    font-weight: 600;
     font-size: 64px;
     line-height: 68px;
+    max-width: 463px;
     text-transform: capitalize;
-    color: #1D253C;
-    width: 463px;
-    margin-bottom: 26px;
   }
-
   &__desc {
     font-weight: 500;
     font-size: 22px;
     line-height: 33px;
-    color: #5A6482;
+    margin: 26px 0 40px;
     width: 411px;
-    margin-bottom: 40px;
   }
+}
 
-  &__btn {
-    font-weight: 600;
+.future {
+  padding: 84px 0;
+  background-color: #F9F5F2;
+  & .price-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #126F86;
+  }
+  &__image {
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 436px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    width: 439px;
+  }
+  &__title {
+    margin-top: 26px;
+  }
+  &__desc {
+    margin: 19px 0 32px;
+  }
+  &__data {
+    margin-top: 20px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #F46752;
-    border: 1px solid rgba(29, 37, 60, 0.2);
-    height: 61px;
-    width: 220px;
+    color: #5A6482;
+    &:before {
+      content: "*";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #F46752;
+    }
   }
 
-  &__img {
+}
+
+.tech {
+  & .container {
+    padding: 148px 0 164px;
+  }
+}
+
+.safe {
+  position: relative;
+  padding: 85px 0 90px;
+  background-color: #F8F8F8;
+
+  &__image {
     position: absolute;
-    height: 697px;
-    left: 355px;
-    top: 17px;
+    left: 442px;
+    top: -110px;
+
   }
-  &__pre {
-    display: inline-block;
+  &__content {
+    text-align: center;
+    width: 1077px;
   }
+
+  &__card {
+    text-align: center;
+    width: 320px;
+    height: 310px;
+    background-color: #FFFFFF;
+    padding: 30px;
+  }
+  &__card-desc {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    color: #5A6482;
+  }
+  &__card-title {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #1D253C;
+  }
+
+
 }
