@@ -14,11 +14,17 @@ body {
 .grid {
   display: grid;
 }
+.grid__col-1 {
+  grid-template-columns: 1f;
+}
 .grid__col-2{
   grid-template-columns: 1fr 1fr;
 }
 .grid__col-3 {
   grid-template-columns: 1fr 1fr 1fr;
+}
+.footer__grid {
+  grid-template-columns: 182px 85px 62px;
 }
 
 
@@ -631,7 +637,7 @@ body {
   position: relative;
   padding: 106px 0 85px;
   background-color: #E5F3FE;
-  height: 382px;
+
   &__content {
     text-align: center;
   }
@@ -639,15 +645,18 @@ body {
     margin-top: 8px;
     margin-bottom: 40px;
   }
+  &__title {
+    margin-top: 0;
+  }
   &__image1 {
     left: 55px;
-    top: -64px;
+    bottom: 0;
     position: absolute;
     width: 571px;
     height: 446px;
   }
   &__image2 {
-    top: 177px;
+    bottom: 0;
     right: 252px;
     position: absolute;
     width: 76px;
@@ -664,7 +673,6 @@ body {
 .footer {
   &__top {
     padding: 73px 0 39px;
-    height: 380px;
   }
   &__bottom {
     height: 80px;
@@ -690,6 +698,9 @@ body {
     font-size: 14px;
     line-height: 23px;
     color: #FFFFFF;
+    & svg {
+      margin-left: 5px;
+    }
   }
   &__desc {
     font-weight: 400;
@@ -716,6 +727,7 @@ body {
   }
   &__right {
     column-gap: 100px;
+    font-family: "Roboto", sans-serif;
   }
   &__reserved {
     font-weight: 400;
@@ -733,5 +745,13 @@ body {
     color: #1D253C;
     border: 1px solid rgba(29, 37, 60, 0.2);
     border-radius: 4px;
+  }
+  &__logos {
+    margin-top: 28px;
+    & i {
+      margin-right: 34px;
+      color: #5A6482;
+      font-size: 18px;
+    }
   }
 }
