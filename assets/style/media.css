@@ -5,6 +5,16 @@
   .container {
     max-width: 900px;
   }
+  .header__container {
+    max-width: 973px;
+  }
+  .hero {
+    background-position-y: 134px;
+    background-size: 682px;
+  }
+  .hero .container {
+    max-width: 950px;
+  }
   .hero__title {
     font-size: 56px;
     max-width: 436px;
@@ -19,8 +29,15 @@
   .future__content {
     width: 363px;
   }
-  .safe__card {
-    width: 282px;
+  .safe__content {
+    width: 873px;
+  }
+  .safe__image {
+    top: -84px;
+    height: 250px;
+  }
+  .safe .dog {
+    width: 150px;
   }
   .safe__content {
     width: 914px;
@@ -57,11 +74,18 @@
   .container {
     max-width: 865px;
   }
+  .section__title {
+    font-size: 40px;
+  }
+  .section__desc {
+    font-size: 16px;
+  }
   .hero {
     background: none;
   }
   .hero__title {
-    font-size: 47px;
+    font-size: 62px;
+    max-width: 444px;
   }
   .hero__desc {
     font-size: 24px;
@@ -138,12 +162,6 @@
   .footer__right {
     column-gap: 74px;
   }
-  .section__title {
-    font-size: 40px;
-  }
-  .section__desc {
-    font-size: 16px;
-  }
 }
 @media (max-width: 850px) {
   .steps__sm-desc {
@@ -166,6 +184,9 @@
 @media (max-width: 800px) {
   .container {
     max-width: 780px;
+  }
+  .section__title {
+    font-size: 30px;
   }
   .steps {
     padding: 75px 0 65px;
@@ -205,11 +226,8 @@
   .footer__right {
     column-gap: 43px;
   }
-  .section__title {
-    font-size: 30px;
-  }
   .hero__title {
-    font-size: 33px;
+    font-size: 45px;
   }
 }
 @media (max-width: 750px) {
@@ -244,6 +262,134 @@
   }
   .footer__desc {
     margin-bottom: 181px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 670px;
+  }
+  .steps__one {
+    left: 13px;
+    max-width: 192px;
+  }
+  .steps__1 {
+    left: 96px;
+  }
+  .steps__dot1 {
+    left: 103px;
+  }
+  .steps__three {
+    right: 10px;
+    max-width: 194px;
+  }
+  .steps__3 {
+    right: 100px;
+  }
+  .steps__dot3 {
+    right: 109px;
+    top: 14px;
+  }
+  .steps__drop1, .steps__drop2 {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    max-width: 615px;
+  }
+  .section__title {
+    font-size: 29px;
+  }
+  .section__desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .steps__one {
+    max-width: 169px;
+  }
+  .steps__three {
+    max-width: 170px;
+  }
+  .steps__3 {
+    right: 72px;
+  }
+  .steps__dot3 {
+    right: 81px;
+  }
+  .steps__1 {
+    left: 77px;
+  }
+  .steps__dot1 {
+    left: 84px;
+  }
+  .price-btn {
+    font-size: 14px;
+    width: 190px;
+    height: 48px;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    max-width: 510px;
+  }
+  .steps__desc {
+    width: 462px;
+  }
+  .steps__frame {
+    height: auto;
+  }
+  .steps__one, .steps__two, .steps__three {
+    position: static;
+    margin: 22px auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .steps__1 {
+    left: 0;
+    right: 10px;
+    margin: 0 auto;
+  }
+  .steps__2 {
+    top: 190px;
+  }
+  .steps__3 {
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 68px;
+    margin: 0 auto;
+  }
+  .steps__dot1 {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .steps__dot2 {
+    top: 208px;
+    right: 10px;
+  }
+  .steps__dot3 {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: 68px;
+    top: auto;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 410px;
+  }
+  .steps__desc {
+    width: 406px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 378px;
+  }
+  .steps__desc {
+    width: 406px;
   }
 }
 
